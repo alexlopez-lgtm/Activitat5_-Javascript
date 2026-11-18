@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobreix els tres grans regnes de la trilogia Dark Souls.">
+    <meta name="author" content="Alex Lopez">
+    <meta name="keywords" content="Lordran, Drangleic, Lothric, Dark Souls">
+    <title>Dark Souls | Els mons</title>
+    <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+    <header class="capcalera">
+        <a class="logo" href="index.html">DARK SOULS</a>
+        <nav class="menu">
+            <a href="index.html">Inici</a>
+            <a class="actiu" href="mons.html">Els mons</a>
+            <a href="personatges.html">Personatges</a>
+        </nav>
+    </header>
+
+    <main class="pagina">
+        <section class="titol-pagina">
+            <p class="etiqueta">TRES REGNES CAIGUTS</p>
+            <h1>ELS MÓNS</h1>
+            <p> cada regne conserva les seves pròpies ruïnes, secrets i llegendes.</p>
+        </section>
+
+        <section class="contenido">
+            <h2>Els mons de Dark Souls</h2>
+            <article class="bloc-mon">
+                <img src="img/yBTuyBU9n72AbrKgcp23fG.png" alt="Paisatge inspirat en Lordran">
+                <div>
+                    <p class="etiqueta">DARK SOULS I</p>
+                    <h2>Lordran</h2>
+                    <p>Una terra antiga on els déus van establir el seu regne. La Primera Flama
+                    manté l'equilibri entre la llum i la foscor, però el seu poder comença a minvar.</p>
+                </div>
+            </article>
+            <article class="bloc-mon invertit">
+                <img src="img/Drangleic_Castle.png" alt="Paisatge inspirat en Drangleic">
+                <div>
+                    <p class="etiqueta">DARK SOULS II</p>
+                    <h2>Drangleic</h2>
+                    <p>Un regne construït sobre les restes d'altres civilitzacions. La maledicció
+                    dels no morts continua estenent-se i el passat sembla repetir-se.</p>
+                </div>
+            </article>
+            <article class="bloc-mon">
+                <img src="img/7e963570e530c9869ef02f3c2ca00707.png" alt="Paisatge inspirat en Lothric">
+                <div>
+                    <p class="etiqueta">DARK SOULS III</p>
+                    <h2>Lothric</h2>
+                    <p>Un regne on els cicles de la flama arriben al seu límit. Les terres i els
+                    seus habitants s'uneixen en un món que sembla estar a punt d'acabar.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="contenidor galeria-seccio">
+            <p class="etiqueta">FRAGMENTS DEL VIATGE</p>
+            <h2>Galeria de la foscor</h2>
+            <p>Selecciona una imatge per veure-la ampliada.</p>
+            <div class="galeria">
+                <button type="button" onclick="canviarImatge('img/portada.png', 'La foguera')">
+                    <img src="img/uhrt09g2l8a91.png" alt="La foguera"><span>La foguera</span>
+                </button>
+                <button type="button" onclick="canviarImatge('img/darksouls1.png', 'Lordran')">
+                    <img src="img/yBTuyBU9n72AbrKgcp23fG.png" alt="Lordran"><span>Lordran</span>
+                </button>
+                <button type="button" onclick="canviarImatge('img/darksouls2.png', 'Drangleic')">
+                    <img src="img/Drangleic_Castle.png" alt="Drangleic"><span>Drangleic</span>
+                </button>
+                <button type="button" onclick="canviarImatge('img/darksouls3.png', 'Lothric')">
+                    <img src="img/7e963570e530c9869ef02f3c2ca00707.png" alt="Lothric"><span>Lothric</span>
+                </button>
+                <button type="button" onclick="canviarImatge('img/firelink.png', 'Firelink Shrine')">
+                    <img src="img/11984947.png" alt="Firelink Shrine"><span>Firelink Shrine</span>
+                </button>
+                <button type="button" onclick="canviarImatge('img/manus.png', 'L\'abisme')">
+                    <img src="img/5243fbf2b2119313b07ee66945621bd7912396dd27ea_url.png" alt="L'abisme"><span>L'abisme</span>
+                </button>
+            </div>
+            <figure class="imatge-gran">
+                <img id="imatgeGran" src="img/uhrt09g2l8a91.png" alt="La foguera ampliada">
+                <figcaption id="peuImatge">La foguera</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>DARK SOULS · THE AGE OF FIRE</p>
+        <p>Projecte HTML5, CSS3 i JavaScript · Alex Lopez</p>
+    </footer>
+    <script src="components/galeria.js"></script>
+</body>
+</html>

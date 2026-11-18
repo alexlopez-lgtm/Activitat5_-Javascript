@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una enciclopèdia dedicada a l'univers de Dark Souls i a l'Edat del Foc.">
+    <meta name="author" content="Alex Lopez">
+    <meta name="keywords" content="Dark Souls, Lordran, Drangleic, Lothric, videojocs, fantasia">
+    <title>Dark Souls | Inici - The Age of Fire</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <script>
+        // Funció senzilla per mostrar el missatge de benvinguda.
+        function benvinguda() {
+            console.log("Que la flama guiï el teu camí.");
+        }
+    </script>
+</head>
+<body onload="benvinguda()">
+    <header class="capcalera">
+        <a class="logo" href="index.html">DARK SOULS</a>
+        <nav class="menu">
+            <a class="actiu" href="index.html">Inici</a>
+            <a href="mons.html">Els mons</a>
+            <a href="personatges.html">Personatges</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="img/3ddbdcb7719ebc17cbe5662399fd6e97_3fe2196962d963571bb55fe9f240df1c.png" alt="Una foguera en un món medieval fosc">
+            <div class="hero-contingut">
+                <p class="sobretitol">UNA SAGA · TRES MÓNs · UNA FLAMA</p>
+                <h1>THE AGE<br>OF FIRE</h1>
+                <p>Endinsa't en un món de llegendes, cendres i foscor.</p>
+                <a class="boto" href="mons.html">EXPLORAR ELS MÓNS</a>
+            </div>
+        </section>
+
+        <section class="contenidor introduccio">
+            <p class="etiqueta">BENVINGUT A LORDRAN</p>
+            <h2>Un món al límit de la foscor</h2>
+            <p class="text-ampli">
+                Dark Souls és una saga d'aventures i fantasia fosca on cada racó amaga
+                una història. Explora regnes caiguts, descobreix personatges llegendaris
+                i decideix quin serà el destí de la flama.
+            </p>
+        </section>
+
+        <section class="contenidor">
+            <div class="cap-seccio">
+                <div>
+                    <p class="etiqueta">LA TRILOGIA</p>
+                    <h2>Tres regnes, una llegenda</h2>
+                </div>
+            </div>
+            <div class="targetes">
+                <article class="targeta">
+                    <img src="img/yBTuyBU9n72AbrKgcp23fG.png" alt="Representació de Lordran">
+                    <div class="targeta-cos">
+                        <span class="numero">01</span>
+                        <h3>Dark Souls</h3>
+                        <p>El viatge comença a Lordran, una terra marcada per la Primera Flama.</p>
+                    </div>
+                </article>
+                <article class="targeta">
+                    <img src="img/Drangleic_Castle.png" alt="Representació de Drangleic">
+                    <div class="targeta-cos">
+                        <span class="numero">02</span>
+                        <h3>Dark Souls II</h3>
+                        <p>Drangleic és un regne consumit pel temps i per la maledicció.</p>
+                    </div>
+                </article>
+                <article class="targeta">
+                    <img src="img/7e963570e530c9869ef02f3c2ca00707.png" alt="Representació de Lothric">
+                    <div class="targeta-cos">
+                        <span class="numero">03</span>
+                        <h3>Dark Souls III</h3>
+                        <p>Quan la flama s'apaga, els regnes convergeixen en un últim cicle.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contenidor crida" id="malediccio"
+            onmouseover="mostrarMalediccio()" onmouseout="amagarMalediccio()">
+            <p class="etiqueta">UNA ADVERTÈNCIA</p>
+            <h2>La maledicció dels no morts</h2>
+            <p>Hi ha llegendes que és millor no despertar...</p>
+            <p id="textMalediccio" class="text-ocult">
+                La marca dels no morts condemna els seus portadors a tornar una vegada
+                i una altra. Continua el teu viatge i descobreix els secrets que amaga
+                aquesta maledicció.
+            </p>
+            <span class="pista">Passa el ratolí per descobrir el secret</span>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>DARK SOULS · THE AGE OF FIRE</p>
+        <p>Projecte HTML5, CSS3 i JavaScript · Alex Lopez</p>
+    </footer>
+    <script src="components/efectes.js"></script>
+</body>
+</html>

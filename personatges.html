@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coneix alguns dels personatges i enemics més recordats de Dark Souls.">
+    <meta name="author" content="Alex Lopez">
+    <meta name="keywords" content="Artorias, Gwyn, Ornstein, Manus, Soul of Cinder, Dark Souls">
+    <title>Dark Souls | Personatges i llegendes</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <script>
+        // Comprova les dues contrasenyes i la longitud mínima.
+        function validarJurament() {
+            const primera = document.getElementById("contrasenya").value;
+            const segona = document.getElementById("repetirContrasenya").value;
+
+            if (primera.length < 8) {
+                alert("La contrasenya ha de tenir com a mínim 8 caràcters.");
+            } else if (primera !== segona) {
+                alert("Les dues contrasenyes no coincideixen.");
+            } else {
+                alert("S'ha canviat correctament la contrasenya");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="capcalera">
+        <a class="logo" href="index.html">DARK SOULS</a>
+        <nav class="menu">
+            <a href="index.html">Inici</a>
+            <a href="mons.html">Els mons</a>
+            <a class="actiu" href="personages.html">Personatges</a>
+        </nav>
+    </header>
+
+    <main class="pagina">
+        <section class="titol-pagina">
+            <p class="etiqueta">DÉUS, GUERRERS I LLEGENDES</p>
+            <h1>PERSONATGES</h1>
+            <p>Alguns noms perduren fins i tot quan els regnes desapareixen.</p>
+            <div id="rellotge" class="rellotge">TEMPS EN AQUEST REGNE: 00:00:00</div>
+        </section>
+
+        <section class="contenido">
+            <h2>Personajes principales</h2>
+            <div class="targetes targetes-personatges">
+                <article class="targeta">
+                    <img src="img/artorias.png" alt="Representació d'Artorias">
+                    <div class="targeta-cos"><span class="numero">DARK SOULS I</span><h3>Artorias</h3>
+                    <p>El Caminant de l'Abisme, un cavaller llegendari que va lluitar contra la foscor.</p></div>
+                </article>
+                <article class="targeta">
+                    <img src="img/gwyn.png" alt="Representació de Gwyn">
+                    <div class="targeta-cos"><span class="numero">DARK SOULS I</span><h3>Gwyn</h3>
+                    <p>El Senyor de la Cendra, una figura central en la història de la Primera Flama.</p></div>
+                </article>
+                <article class="targeta">
+                    <img src="img/ornstein.png" alt="Representació d'Ornstein">
+                    <div class="targeta-cos"><span class="numero">DARK SOULS I</span><h3>Ornstein</h3>
+                    <p>Un dels quatre cavallers de Gwyn, conegut com el Matadracs.</p></div>
+                </article>
+                <article class="targeta">
+                    <img src="img/manus.png" alt="Representació de Manus">
+                    <div class="targeta-cos"><span class="numero">DARK SOULS I</span><h3>Manus</h3>
+                    <p>El Pare de l'Abisme, una presència vinculada a una foscor molt antiga.</p></div>
+                </article>
+                <article class="targeta targeta-destacada">
+                    <img src="img/soul-of-cinder.png" alt="Representació del Soul of Cinder">
+                    <div class="targeta-cos"><span class="numero">DARK SOULS III</span><h3>Soul of Cinder</h3>
+                    <p>La manifestació dels qui han enllaçat la flama al llarg dels cicles.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contenidor formulari-seccio">
+            <p class="etiqueta">EL TEU DESTÍ</p>
+            <h2>El jurament del no mort</h2>
+            <p>Escriu una contrasenya dues vegades per confirmar el teu jurament.</p>
+            <form onsubmit="validarJurament(); return false;">
+                <label for="contrasenya">Contrasenya</label>
+                <input type="password" id="contrasenya" name="contrasenya" minlength="8" required>
+                <label for="repetirContrasenya">Repeteix la contrasenya</label>
+                <input type="password" id="repetirContrasenya" name="repetirContrasenya" required>
+                <button class="boto" type="submit">CONFIRMAR JURAMENT</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="peu">
+        <p>DARK SOULS · THE AGE OF FIRE</p>
+        <p>Projecte HTML5, CSS3 i JavaScript · Alex Lopez</p>
+    </footer>
+    <script src="components/rellotge.js"></script>
+</body>
+</html>
